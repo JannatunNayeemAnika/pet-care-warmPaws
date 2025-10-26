@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Text */}
         <p className="font-bold text-sm sm:text-base md:text-lg text-center">
           Pet Care – Pet Winter Care <br />
-         your furry friends cozy since 2025
+          Keeping your furry friends cozy since 2025
         </p>
         <p className="text-xs sm:text-sm md:text-base text-center">
           © {new Date().getFullYear()} WarmPaws. All rights reserved.
