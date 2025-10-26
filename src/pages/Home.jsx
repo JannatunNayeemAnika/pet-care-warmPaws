@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "animate.css"; // <-- Import Animate.css
 import { Link } from "react-router-dom";
 import catDogImg from "../assets/adorable.webp";
 import blackCat from "../assets/catus.jpg";
@@ -40,15 +41,15 @@ const Home = () => {
                   alt="Slide Image"
                   className="w-full h-full object-cover sm:object-contain md:object-cover"
                 />
-                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40 text-white text-center px-4">
-                  <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2">
+                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40 text-white text-center px-4 animate__animated animate__fadeIn">
+                  <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-2 animate__animated animate__fadeInDown">
                     {i === 0
                       ? "Keep Your Pets Cozy"
                       : i === 1
                       ? "Winter Warmth for Cats"
                       : "Care for Your Dogs"}
                   </h2>
-                  <p className="text-base sm:text-lg md:text-xl mb-4">
+                  <p className="text-base sm:text-lg md:text-xl mb-4 animate__animated animate__fadeInUp">
                     {i === 0
                       ? "Explore our winter pet care services"
                       : i === 1
@@ -57,7 +58,7 @@ const Home = () => {
                   </p>
                   <Link
                     to="/services"
-                    className="px-6 py-2 bg-pink-400 text-white rounded-lg hover:bg-pink-500 transition"
+                    className="px-6 py-2 bg-pink-400 text-white rounded-lg hover:bg-pink-500 transition animate__animated animate__pulse animate__infinite"
                   >
                     View Services
                   </Link>
@@ -69,15 +70,15 @@ const Home = () => {
       </section>
 
       {/* Popular Winter Care Services */}
-      <section className="my-10 text-center px-4 md:px-8 lg:px-16">
+      <section className="my-10 text-center px-4 md:px-8 lg:px-16 animate__animated animate__fadeInUp">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-pink-500">
           Popular Winter Care Services
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               key={service.serviceId}
-              className="bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform"
+              className={`bg-white shadow-xl rounded-2xl overflow-hidden hover:scale-105 transition-transform animate__animated animate__zoomIn animate__delay-${index}s`}
             >
               <img
                 src={service.image}
@@ -102,7 +103,7 @@ const Home = () => {
       </section>
 
       {/* Winter Care Tips */}
-      <section className="my-16 px-4 md:px-8 lg:px-16">
+      <section className="my-16 px-4 md:px-8 lg:px-16 animate__animated animate__fadeInUp">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 text-pink-500">
           Winter Care Tips for Pets
         </h2>
@@ -123,7 +124,7 @@ const Home = () => {
           ].map((tip, i) => (
             <div
               key={i}
-              className="p-6 bg-white shadow-lg rounded-xl hover:scale-105 transition-transform"
+              className="p-6 bg-white shadow-lg rounded-xl hover:scale-105 transition-transform animate__animated animate__fadeInUp animate__delay-1s"
             >
               <h3 className="text-xl font-semibold mb-2 text-pink-500">{tip.title}</h3>
               <p>{tip.desc}</p>
@@ -133,12 +134,12 @@ const Home = () => {
       </section>
 
       {/* Meet Our Expert Vets */}
-      <section className="my-16 px-4 md:px-8 lg:px-16">
+      <section className="my-16 px-4 md:px-8 lg:px-16 animate__animated animate__fadeInUp">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 text-pink-500">
           Meet Our Expert Vets
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {[
+          {[ 
             { img: d1, name: "Dr. Sarah", desc: "Pet Nutrition Specialist" },
             { img: d2, name: "Dr. John", desc: "Grooming Expert" },
             { img: d3, name: "Dr. Emma", desc: "Winter Care Specialist" },
@@ -146,15 +147,15 @@ const Home = () => {
           ].map((vet, i) => (
             <div
               key={i}
-              className="text-center p-4 sm:p-6 bg-white shadow-lg rounded-xl hover:scale-105 transition-transform"
+              className="text-center p-4 sm:p-6 bg-white shadow-lg rounded-xl hover:scale-105 transition-transform animate__animated animate__zoomIn animate__delay-1s"
             >
               <img
                 src={vet.img}
                 alt={vet.name}
                 className="w-32 sm:w-36 md:w-40 h-32 sm:h-36 md:h-40 mx-auto rounded-full object-cover mb-4 border-2 border-pink-300"
               />
-              <h3 className="text-lg sm:text-lg md:text-lg font-semibold">{vet.name}</h3>
-              <p className="text-gray-500 text-sm sm:text-sm md:text-base">{vet.desc}</p>
+              <h3 className="text-lg font-semibold">{vet.name}</h3>
+              <p className="text-gray-500 text-sm">{vet.desc}</p>
             </div>
           ))}
         </div>
