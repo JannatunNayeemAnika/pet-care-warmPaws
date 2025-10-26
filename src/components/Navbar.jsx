@@ -29,7 +29,7 @@ const Navbar = () => {
       <MyContainer className="flex items-center justify-between">
 
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-">
+        <Link to="/" className="flex items-center gap-2">
           <img
             src={logo}
             className="w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-pink-300"
