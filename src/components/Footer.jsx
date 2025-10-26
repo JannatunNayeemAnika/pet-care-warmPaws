@@ -15,7 +15,7 @@ export default function Footer() {
           Pet Care – Pet Winter Care <br />
           Keeping your furry friends cozy since 2025
         </p>
-        <p className="text-xs sm:text-sm md:text-base text-center">
+        <p className="text- sm:text-sm md:text-base text-center">
           © {new Date().getFullYear()} WarmPaws. All rights reserved.
         </p>
 
