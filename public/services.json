@@ -1,0 +1,74 @@
+[
+    {
+        "serviceId": 1,
+        "serviceName": "Winter Coat Fitting for Dogs",
+        "providerName": "PawCare Studio",
+        "providerEmail": "info@pawcare.com",
+        "price": 25,
+        "rating": 4.9,
+        "slotsAvailable": 4,
+        "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+        "image": "https://www.thepetexpress.co.uk/blog-admin/wp-content/uploads/2018/09/Dog-in-Coat-e1536662362934.jpg",
+        "category": "Clothing"
+    },
+    {
+        "serviceId": 2,
+        "serviceName": "Winter Grooming & Paw Treatment",
+        "providerName": "CozyPets Grooming",
+        "providerEmail": "hello@cozypets.com",
+        "price": 30,
+        "rating": 4.8,
+        "slotsAvailable": 3,
+        "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+        "image": "https://www.pawpaddogs.co.uk/wp-content/uploads/2023/08/level-2-dog-grooming-course-scaled.jpeg",
+        "category": "Grooming"
+    },
+    {
+        "serviceId": 3,
+        "serviceName": "Heated Pet Blanket Rental",
+        "providerName": "WarmTails Hub",
+        "providerEmail": "support@warmtails.com",
+        "price": 18,
+        "rating": 4.7,
+        "slotsAvailable": 6,
+        "description": "Rent cozy, temperature-controlled blankets for your pets during chilly nights.",
+        "image": "https://m.media-amazon.com/images/I/71Q0k392z+L.jp…,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg",
+        "category": "Accessories"
+    },
+    {
+        "serviceId": 4,
+        "serviceName": "Nutritional Winter Meal Plan",
+        "providerName": "PetHealth Kitchen",
+        "providerEmail": "info@pethealthkitchen.com",
+        "price": 35,
+        "rating": 4.9,
+        "slotsAvailable": 5,
+        "description": "Custom meal plans rich in protein and healthy fats to keep pets energized and warm.",
+        "image": "https://bestforpet.co.nz/wp-content/uploads/2024/04/Dog-eating.jpg",
+        "category": "Nutrition"
+    },
+    {
+        "serviceId": 5,
+        "serviceName": "Winter Wellness Vet Checkup",
+        "providerName": "FurryCare Clinic",
+        "providerEmail": "care@furrycare.com",
+        "price": 40,
+        "rating": 5.0,
+        "slotsAvailable": 2,
+        "description": "Comprehensive winter health check including coat inspection, joint care, and diet advice.",
+        "image": "https://www.shutterstock.com/image-photo/persian-cat-veterinarian-doctor-vet-260nw-402931909.jpg",
+        "category": "Healthcare"
+    },
+    {
+        "serviceId": 6,
+        "serviceName": "Pet Boot & Jacket Combo Pack",
+        "providerName": "SnowPaw Essentials",
+        "providerEmail": "sales@snowpaw.com",
+        "price": 28,
+        "rating": 4.6,
+        "slotsAvailable": 7,
+        "description": "Durable, waterproof winter boots and jackets set for snowy walks and outdoor comfort.",
+        "image": "https://img.fruugo.com/product/9/30/1741991309_0340_0340.jpg",
+        "category": "Clothing"
+    }
+]
